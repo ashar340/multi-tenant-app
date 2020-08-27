@@ -4,7 +4,7 @@ import { Observable } from "rxjs";
 import { TenantService } from "./tenant.service";
 
 @Injectable()
-export  class TenantInterceptor implements HttpInterceptor {
+export class TenantInterceptor implements HttpInterceptor {
   constructor(private tenantService: TenantService) {}
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
